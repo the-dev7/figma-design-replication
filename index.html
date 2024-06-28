@@ -14,7 +14,7 @@
             <a href="#">Programs</a>
             <a href="#">Success Story</a>
             <a href="#">About</a>
-            <div class="book-btn">Book a Free Demo</div>
+            <div class="book-btn" id="bookBtn">Book a Free Demo</div>
         </div>
     </div>
     <div class="header">
@@ -186,13 +186,97 @@
             that strengthens neural connections and builds a strong foundation for their future.
         </p>
         <div class="start-container">
-            <div class="book-btn">Start Now</div>
+            <div class="book-btn" id="startBtn">Start Now</div>
         </div>
     </div>
     
     <div class="slogans-card">
-
+        <p>
+            Started with passion to create global impact, creating real success stories in families across globe
+        </p>
+        <div class="whatsapp-container">
+            <div class="whatsapp-ss"></div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
     </div>
 
+
+    <!-- modal -->
+     <div id="bookForm" class="book-form">
+        <!-- container -->
+         <div class="bookform-container">
+            <div class="book-form-top">
+                <div class="form-left">
+                    <h3>Book Demo Session</h3>
+                    <span>Only 4 Spots Left!</span>
+                </div>
+                <span class="form-close">&times;</span>
+            </div>
+            <form class="book-form-body">
+                <input type="text" placeholder="Name" name="name"/>
+                <input type="text" placeholder="Email id" name="email"/>
+                <div class="phone-container">
+                    <select id="countryCode" name="country-code">
+                        <option value="+91">+91</option>
+                        <option value="1">+1</option>
+                        <option value="49">+49</option>
+                        <option value="33">+33</option>
+                    </select>
+                    <div class="phone-vertical"></div>
+                    <input type="tel" placeholder="Enter mobile number" pattern="\d*"/>
+                </div>
+                <select id="babyStage" name="baby-stage">
+                    <option value="" disabled selected>Select Baby Stage</option>
+                    <option value="infant">Infant</option>
+                    <option value="toddler">Toddler</option>
+                    <option value="preschooler">Preschooler</option>
+                </select>
+
+                <input type="submit" value="Apply Now"/>
+
+                <p>
+                    UpTodd’s <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a> for complete data security
+                </p>
+
+                <div class="shortlogo-holder">
+                    <div class="avastlogo"></div>
+                    <div class="httpslogo"></div>
+                </div>
+            </form>
+         </div>
+     </div>
+
+    <script>
+    /* modal handler */
+    var modal = document.getElementById("bookForm");
+    var btn1 = document.getElementById("bookBtn");
+    var btn2 = document.getElementById("startBtn");
+    var span1 = document.getElementsByClassName("form-close")[0];
+
+    btn1.onclick = function() {
+        modal.style.display = "flex";
+    }
+
+    btn2.onclick = function() {
+        modal.style.display = "flex";
+    }
+
+    span1.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // closing on clicking outside modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
 </body>
 </html>
