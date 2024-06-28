@@ -483,3 +483,27 @@ body {
     height: 38px;
     margin-top: 25px;
 }
+
+
+/* book bar */
+
+.book-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 3em 10em;
+    background-color: rgba(90, 64, 196, 1);
+    color: white;
+}
+
+.book-bar p {
+    width: 61%;
+    font-size: 1.2em;
+}
+
+.book-bar .book-btn {
+    padding: 10px 25px;   
+}
