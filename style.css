@@ -720,6 +720,10 @@ margin-right: -20px; */
     pointer-events: none; 
   } */
 
+select {
+    background-color: white;
+}
+
 
 .select-wrapper {
     position: relative;
