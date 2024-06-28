@@ -402,3 +402,84 @@ body {
 }
 
 
+/* baby-minds */
+
+.baby-minds {
+    width: 100%;
+    padding: 4em 2em;
+    padding-bottom: 2em;
+    box-sizing: border-box;
+    background-color: rgba(255, 251, 251, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(0, 40, 99, 1);
+}
+
+.baby-minds h1 {
+    font-weight: 500;
+}
+
+.babyminds-container {
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+    padding: 2em 0;
+}
+
+.mind-story {
+    width: 330px;
+    /* height: 300px; */
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px rgba(100,100,100,0.15);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.mind-story:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 20px rgba(100,100,100,0.6);
+}
+
+.mind-story-top {
+    width: 330px;
+    height: 220px;
+    flex-shrink: 0;
+    background-image: url('res/child-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mind-story-bottom {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 2em;
+    padding-top: 0.3em;
+    padding-bottom: 1.5em;
+}
+
+.mind-story-bottom span {
+    font-weight: 600;
+}
+
+.baby-minds .next-slide-btn {
+    width: 38px;
+    height: 38px;
+    margin-top: 25px;
+}
