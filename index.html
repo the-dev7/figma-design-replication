@@ -231,12 +231,14 @@
                 <input type="text" placeholder="Name" name="name"/>
                 <input type="text" placeholder="Email id" name="email"/>
                 <div class="phone-container">
-                    <select id="countryCode" name="country-code">
-                        <option value="+91">+91</option>
-                        <option value="1">+1</option>
-                        <option value="49">+49</option>
-                        <option value="33">+33</option>
-                    </select>
+                    <div class="select-wrapper">
+                        <select id="countryCode" name="country-code" class="country-code">
+                            <option value="+91">+91</option>
+                            <option value="1">+1</option>
+                            <option value="49">+49</option>
+                            <option value="33">+33</option>
+                        </select>
+                    </div>
                     <div class="phone-vertical"></div>
                     <input type="tel" placeholder="Enter mobile number" pattern="\d*"/>
                 </div>
